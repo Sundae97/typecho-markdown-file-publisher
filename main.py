@@ -1,5 +1,6 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
+import logging
 import os.path
 
 from markdown_file_searcher import scan_files
@@ -39,6 +40,7 @@ def execute_flow(file_path):
 
 
 if __name__ == '__main__':
+    logging.basicConfig(level='ERROR')
     files = scan_files(config.base_folder, config.exclude_folders)
     for md_file in files:
         execute_flow(md_file)
