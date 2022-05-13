@@ -1,4 +1,4 @@
-自动将本地文件夹下的markdown文件发布到typecho的站点中
+将本地文件夹下的markdown文件发布到typecho的站点中
 
 ### TODO
 - [x] 将markdown发布到typecho
